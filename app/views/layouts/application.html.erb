@@ -1,14 +1,93 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>/cab/ride.</title>
-    <%= csrf_meta_tags %>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="Portfolio Template" />
+	<meta name="author" content="layerz" />
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
+	<title>/cab/ride.</title>
 
-  <body>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Serif:400i,700i">
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+
+</head>
+<body>
+	<div class="fade"></div>
+
+
+	<div id="site">
+		<!-- header -->
+		<header class="header">
+			<div class="logo">
+				<a href="index.html">/cab/ride.</a>
+			</div>
+
+			<div class="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</header>
+
+		<!-- nav -->
+		<nav class="nav">
+			<ul class="menu">
+				<li>
+					<a href="#" class="active">Portfolio</a>
+					<ul>
+						<li><a href="works-largue.html">Largue Thumbs</a></li>
+						<li><a href="index.html" class="active">Small Thumbs</a></li>
+						<li><a href="works-metro.html">Metro</a></li>
+						<li><a href="works-clean.html">Clean</a></li>
+						<li><a href="works-overlay.html">Overlay</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="blog.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<ul class="share">
+				<li><a href="#" class="link">Instagram</a></li>
+				<li><a href="#" class="link">Facebook</a></li>
+			</ul>
+		</nav>
+
+    <div class="site__content">
+		
+
     <%= yield %>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="column col-4">
+          <h5>Say Hello</h5>
+          <p>
+            <a href="#" class="link">contact@flamini.com</a><br>
+            +01 2345 6789
+          </p>
+        </div>
+
+        <div class="column col-4">
+          <h5>Meet us</h5>
+          <p>121 king street, Melbourne<br>Victoria 3000, Australia</p>
+        </div>
+
+        <div class="column col-4">
+          <h5>Follow us</h5>
+          <ul class="share">
+            <li><a href="#" class="link">Instagram</a></li>
+            <li><a href="#" class="link">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
